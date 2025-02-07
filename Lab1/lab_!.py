@@ -3,8 +3,15 @@ import matplotlib.patches as patches
 import numpy as np
 import pandas as pd
 
-# General
-fig, ((plot3, plot5), (plot6, _)) = plt.subplots(2, 2) 
+# General/
+fig, ((plot3, plot5), (plot6, info)) = plt.subplots(2, 2) 
+info.axis('off')
+
+# plot3 = plt.subplot(2, 2, 1) 
+# plot5 = plt.subplot(2, 2, 2)
+# plot6 = plt.subplot(2, 2, 3)
+# info = plt.subplot(2, 2, 4)
+
 
 plot3.set_title('Initial points') 
 plot5.set_title('Linear regression') 
@@ -36,6 +43,7 @@ def plotting(x: list, y: list, chosen_columns_variant: tuple[str, str]) -> None:
     plot3.set_title(str(chosen_columns_variant))
     plot3.set_xlabel(chosen_columns_variant[0])
     plot3.set_ylabel(chosen_columns_variant[1])
+    # plot3.set_aspect('equal', adjustable='box')
 
 
     # Ex4
@@ -50,7 +58,7 @@ def plotting(x: list, y: list, chosen_columns_variant: tuple[str, str]) -> None:
     plot5.set_xlabel(chosen_columns_variant[0])
     plot5.set_ylabel(chosen_columns_variant[1])
     
-    plot5.axline(xy1=(0, w0), slope=w1, color='green')
+    plot5.axline(xy1=(0, w0), slope=w1, color='red')
 
     
     # Ex6
@@ -61,8 +69,13 @@ def plotting(x: list, y: list, chosen_columns_variant: tuple[str, str]) -> None:
 
     # draw and fill error squares
     plot6.axline(xy1=(0, w0), slope=w1, color='red')
+    difference_between_scales = (plot6.get_xlim()[1] - plot6.get_xlim()[0]) / (plot6.get_ylim()[1] - plot6.get_ylim()[0])
+    print(difference_between_scales)
     for i in range(n):
-        patch = patches.Rectangle((x[i], y[i]), abs(w0 + w1 * x[i] - y[i]), abs(w0 + w1 * x[i] - y[i]), color='green', alpha=0.1)
+        if (y[i] < w0 + w1 * x[i]):
+            patch = patches.Rectangle((x[i], y[i]), -abs(w0 + w1 * x[i] - y[i]) * difference_between_scales, abs(w0 + w1 * x[i] - y[i]), color='green', alpha=0.2)
+        else:
+            patch = patches.Rectangle((x[i], w0 + w1 * x[i]), abs(w0 + w1 * x[i] - y[i]) * difference_between_scales, abs(w0 + w1 * x[i] - y[i]), color='green', alpha=0.2)
         plot6.add_patch(patch)
 
 
