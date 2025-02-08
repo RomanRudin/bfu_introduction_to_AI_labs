@@ -1,8 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
-import numpy as np
 import pandas as pd
-from math import log
 
 #? Subplots
 fig, ((plot3, plot5), (plot6, plot6_log)) = plt.subplots(2, 2) 
