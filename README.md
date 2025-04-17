@@ -5,7 +5,16 @@ Labs on the subject of "introduction to AI" 2-nd course, 4-th semester.  Only av
 
 ## Labs
 
-1. [x] [Линейная регрессия, метод наименьших квадратов (Linear regression, MSE)](Lab1/lab_1_text.md)
+1. [ ] [Линейная регрессия, метод наименьших квадратов (Linear regression, MSE)](Lab1/)
+    - [x] [Часть 1](/Lab1/1/lab_1_text.md)
+    - [ ] [Часть 2](/Lab1/2/)
+    - [ ] [Часть 3 (необязательная)](/Lab1/3/)
+2. [ ] [Бинарная классификация](/Lab2/)
+    - [x] [Часть 1](/Lab2/1/lab_2_1.py)
+    - [ ] [Часть 2](/Lab2/2/)
+    - [ ] [Часть 3](/Lab2/3/)
+3. [ ] [Нейронные сети](/Lab3/)
+4. [ ] [Нейронные сети 2](/Lab4/)
 
 
 
