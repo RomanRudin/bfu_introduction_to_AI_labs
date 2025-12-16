@@ -1,24 +1,38 @@
 # bfu_introduction_to_AI
-Labs on the subject of "introduction to AI" 2-nd course, 4-th semester.  Only available for AIDA group of Aplied Mathematics
+Labs on the subjects of:
+- ["introduction to AI" 2-nd course, 4-th semester.](#Labs-2)
+- ["ML" 3rd course, 5-th, 6-th semester.](Labs-3)
+Only available for AIDA group of Aplied Mathematics
 
-
+# Introduction to AI
 
 ## Labs
 
-1. [x] [Линейная регрессия, метод наименьших квадратов (Linear regression, MSE)](Lab1/)
-    - [x] [Часть 1](/Lab1/1/lab_1_text.md)
-    - [x] [Часть 2](/Lab1/2/)
-    - [x] [Часть 3 (необязательная)](/Lab1/3/)
-2. [x] [Бинарная классификация](/Lab2/)
-    - [x] [Часть 1](/Lab2/1/lab_2_1.py)
-    - [x] [Часть 2](/Lab2/2/)
-    - [x] [Часть 3](/Lab2/3/)
-3. [x] [Нейронные сети](/Lab3/)
-4. [x] [Нейронные сети 2](/Lab4/)
+1. [x] [Линейная регрессия, метод наименьших квадратов (Linear regression, MSE)](bfu_introduction_to_AI_labs/Lab1/)
+    - [x] [Часть 1](bfu_introduction_to_AI_labs//Lab1/1/lab_1_text.md)
+    - [x] [Часть 2](bfu_introduction_to_AI_labs//Lab1/2/)
+    - [x] [Часть 3 (необязательная)](bfu_introduction_to_AI_labs//Lab1/3/)
+2. [x] [Бинарная классификация](bfu_introduction_to_AI_labs//Lab2/)
+    - [x] [Часть 1](bfu_introduction_to_AI_labs//Lab2/1/lab_2_1.py)
+    - [x] [Часть 2](bfu_introduction_to_AI_labs//Lab2/2/)
+    - [x] [Часть 3](bfu_introduction_to_AI_labs//Lab2/3/)
+3. [x] [Нейронные сети](bfu_introduction_to_AI_labs//Lab3/)
+4. [x] [Нейронные сети 2](bfu_introduction_to_AI_labs//Lab4/)
+
+
+# Machine Learning
+
+## Labs
+1. [ ] [Исследование кривых обучения и регуляризации](bfu_ml_labs/Lab_4/)
+2. [ ] [Применение модели решающих деревьев в задачах классификации](bfu_ml_labs/Lab_5_1/)
+3. [ ] [Применение ансамблевых моделей на базе решающих деревьев в задачах классификации](bfu_ml_labs/Lab_5_2/)
+4. [ ] [Изучение  процесса подбора гиперпараметров модели.](bfu_ml_labs/Lab_5_3/)
 
 
 
-## Lectures
+
+
+## Lectures Introduction to AI
 
 1. [Введение](docs/ИИ_1.pdf)
 1. [Задача ML (машинного обучения)](docs/Задача_машинного_обучения..pdf)
