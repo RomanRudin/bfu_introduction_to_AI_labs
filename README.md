@@ -1,4 +1,4 @@
-# bfu_introduction_to_AI
+# bfu_ml
 Labs on the subjects of:
 - ["introduction to AI" 2-nd course, 4-th semester.](#Labs-2)
 - ["ML" 3rd course, 5-th, 6-th semester.](Labs-3)
